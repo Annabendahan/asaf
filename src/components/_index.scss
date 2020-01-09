@@ -1,0 +1,173 @@
+.banner {
+  text-align: center;
+  img {
+    width: 100%;
+    @include breakpoint(m) {
+      width: 70%;
+    }
+  }
+}
+
+.box-left {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column-reverse;
+
+  font-family: "Raleway", sans-serif;
+  @include breakpoint(s) {
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+  }
+
+  img {
+    flex: 0 0 50%;
+    width: 400px;
+    @include breakpoint(m) {
+      width: 500px;
+    }
+  }
+  a {
+    color: map-get($colors, blue-light);
+    text-decoration: none;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.box-left2 {
+  margin: 100px auto;
+
+  font-family: "Raleway", sans-serif;
+  @include breakpoint(s) {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+  }
+
+  img {
+    flex: 0 0 50%;
+    width: 400px;
+    @include breakpoint(m) {
+      width: 500px;
+    }
+  }
+  a {
+    color: map-get($colors, blue-light);
+    text-decoration: none;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.box-desc {
+  flex: 0 0 40%;
+}
+
+.box-desc2 {
+  flex: 0 0 40%;
+  @include breakpoint(s) {
+    margin-left: 60px;
+  }
+}
+
+.date {
+  font-size: 0.8rem;
+  font-family: Avenir;
+}
+
+.tarif {
+  font-size: 0.8rem;
+  font-family: Avenir;
+}
+
+.programme {
+  text-align: center;
+  img {
+    margin: auto;
+    width: 400px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.landing {
+  background: white;
+  z-index: 4;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 1px;
+}
+
+.landing__content {
+  width: 400px;
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  z-index: 5;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  margin: 70px 0px;
+  @include breakpoint(m) {
+    width: 70%;
+    margin: 100px 20px;
+  }
+  p {
+    font-family: Avenir;
+    font-size: 0.9rem;
+  }
+}
+
+.pictures {
+  width: 100%;
+  @include breakpoint(m) {
+    margin-left: 1%;
+    width: 60%;
+    :nth-child(even) {
+      margin-left: 65%;
+      width: 100%;
+    }
+  }
+}
+
+.contact {
+  background-image: url(../images/backgroundblue2.jpg);
+  width: 80%;
+  margin: auto;
+  min-height: 300px;
+  color: white;
+  padding: 50px;
+  p {
+    font-size: 1.2;
+    font-family: avenir;
+  }
+}
+
+.link {
+  margin: auto;
+  width: 300px;
+
+  a {
+    text-decoration: none;
+    color: map-get($colors, blue-light);
+    font-family: "Raleway", sans-serif;
+  }
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.tarifs {
+  font-family: avenir;
+  font-size: 0.9rem;
+  margin-left: 5%;
+}

@@ -1,19 +1,24 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/logoASAF.jpeg"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
+      className="header"
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        display: `flex`,
+        width: `100%`,
+        justifyContent: `space-between`,
+        alignItems: `center`,
+
+        padding: `1.45rem 3%`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -24,9 +29,56 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <img src={logo} alt="" />
         </Link>
       </h1>
+      <div className="navs">
+        <Link
+          to="/"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          {" "}
+          ACCUEIL
+        </Link>
+        <Link
+          to="/alpe-d-huez"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          {" "}
+          ALPE D'HUEZ
+        </Link>
+        <Link
+          to="/belleplagne"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          {" "}
+          BELLE PLAGNE
+        </Link>
+        <Link
+          to="/tarifs-et-inscriptions"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          {" "}
+          TARIFS & INSCRIPTIONS
+        </Link>
+        <Link
+          to="/contact"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          {" "}
+          CONTACT
+        </Link>
+      </div>
     </div>
   </header>
 )

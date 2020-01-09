@@ -1,0 +1,19 @@
+.navs {
+  a {
+    margin: 0 10px;
+    color: map-get($colors, blue-dark);
+    font-weight: 500;
+    font-size: 0.8rem;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.header {
+  font-family: "Raleway", sans-serif;
+  color: map-get($colors, blue-dark);
+  img {
+    width: 300px;
+  }
+}
