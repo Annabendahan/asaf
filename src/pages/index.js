@@ -122,7 +122,7 @@ class IndexPage extends Component {
           </div>
         </div>
         <Layout>
-          <SEO title="Home" />
+          <SEO title="ASAF SKI" />
 
           <div
             className="home"
