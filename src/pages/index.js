@@ -132,11 +132,7 @@ class IndexPage extends Component {
           >
             <div className="box-banner">
               <div className="box-banner__left">
-                <h1>
-                  {" "}
-                  Envie <br />
-                  de glisse?
-                </h1>
+                <h1> Envie de glisse?</h1>
                 <p>
                   {" "}
                   SKI, SURF, PISTE, HORS-PISTE, ENTRE AMIS OU EN FAMILLE !{" "}

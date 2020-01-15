@@ -7,6 +7,7 @@ class Menu extends Component {
   state = {
     show: false,
     show2: false,
+    show3: false,
   }
 
   menuAppearsHandler = () => {
@@ -17,6 +18,12 @@ class Menu extends Component {
       }.bind(this),
       200
     )
+    setTimeout(
+      function() {
+        this.setState({ show3: true })
+      }.bind(this),
+      600
+    )
   }
 
   iconeAppearsHandler = () => {
@@ -26,6 +33,12 @@ class Menu extends Component {
         this.setState({ show: false })
       }.bind(this),
       200
+    )
+    setTimeout(
+      function() {
+        this.setState({ show3: false })
+      }.bind(this),
+      400
     )
   }
 
@@ -204,7 +217,11 @@ class Menu extends Component {
 
     return (
       <div>
-        <Backdrop show={this.state.show} clicked={this.iconeAppearsHandler} />
+        <Backdrop
+          show3={this.state.show3}
+          show2={this.state.show2}
+          clicked={this.iconeAppearsHandler}
+        />
         {menuIcone}
         {menu}
       </div>

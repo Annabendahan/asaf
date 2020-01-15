@@ -34,7 +34,7 @@ import c10 from "../images/Cours/IMG_9987 copie.jpg"
 
 const Belleplagne = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Belleplagne" />
     <div className="banner">
       <div className="banner-title">
         <h1>Belle Plagne</h1>
