@@ -638,6 +638,10 @@ footer {
   font-size: 0.7rem;
   font-weight: 500;
   margin-top: 100px;
+  a {
+    color: map-get($colors, blue-dark);
+    text-decoration: none;
+  }
 }
 
 .layout {

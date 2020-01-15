@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           PAR{" "}
           <a href="https://annabdh.com" target="blank">
             {" "}
-            ANNA BENDAHAN{" "}
+            <b>ANNA BENDAHAN</b>{" "}
           </a>
         </footer>
       </div>
