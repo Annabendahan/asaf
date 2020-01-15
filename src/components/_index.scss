@@ -2,7 +2,7 @@
   text-align: right;
   img {
     margin: 20px 0px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     width: 100%;
     @include breakpoint(m) {
       width: 70%;
@@ -154,7 +154,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 4;
-  background: white;
+  background: map-get($colors, blue-dark);
   top: 0px;
   display: block;
 }
@@ -164,7 +164,7 @@
   margin: auto;
   margin-top: 40%;
   text-align: center;
-  color: map-get($colors, blue-dark);
+  color: white;
   font-family: "Raleway", sans-serif;
 
   z-index: 5;

@@ -104,7 +104,7 @@ class IndexPage extends Component {
           className="landing"
           style={{
             opacity: this.state.mounted ? 0 : 1,
-            display: this.state.mounted ? "none" : "block",
+            display: this.state.mounted2 ? "none" : "block",
             transition: "1s opacity ease-out",
           }}
         >
