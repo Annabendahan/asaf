@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900|Cormorant+Garamond:300,400,500,600,700&display=swap");
 
 html {
   font-family: sans-serif;
@@ -204,6 +204,7 @@ body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
+  overflow: hidden;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -231,30 +232,35 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: map-get($colors, blue-light);
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  color: map-get($colors, blue-dark);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
-  font-size: 1.8rem;
+  font-size: 5rem;
   line-height: 1.1;
+  @include breakpoint(l) {
+    font-size: 7rem;
+  }
+  @include breakpoint(xl) {
+    font-size: 10rem;
+  }
 }
 h2 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: -40px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 60px;
   margin-bottom: 1.65rem;
-  color: map-get($colors, blue-light);
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  color: map-get($colors, blue-dark);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
-  font-size: 1.22671rem;
+  font-size: 2.3671rem;
   line-height: 1.1;
-  max-width: 960px;
-  margin: auto;
+  max-width: 1160px;
 }
 h3 {
   margin-left: 0;
@@ -265,12 +271,18 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: map-get($colors, blue-light);
+  color: map-get($colors, blue-dark);
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
-  font-size: 1.08316rem;
+  font-size: 1.38316rem;
   line-height: 1.1;
+  @include breakpoint(l) {
+    font-size: 1.4rem;
+  }
+  @include breakpoint(xl) {
+    font-size: 1.7rem;
+  }
 }
 h4 {
   margin-left: 0;
@@ -281,8 +293,8 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: "Raleway", sans-serif;
+  color: map-get($colors, blue-dark);
+  font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   text-rendering: optimizeLegibility;
   font-size: 1.5rem;
@@ -626,4 +638,17 @@ footer {
   font-size: 0.7rem;
   font-weight: 500;
   margin-top: 100px;
+}
+
+.layout {
+  padding: 1.0875rem 1rem;
+  @include breakpoint(s) {
+    padding: 1.0875rem 2rem;
+  }
+  @include breakpoint(m) {
+    padding: 1.0875rem 3rem;
+  }
+  @include breakpoint(m) {
+    padding: 1.0875rem 5rem;
+  }
 }

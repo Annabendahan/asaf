@@ -3,17 +3,44 @@
     margin: 0 10px;
     color: map-get($colors, blue-dark);
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     &:hover {
       font-weight: bold;
     }
   }
 }
 
+@media (max-width: 1300px) {
+  .navs {
+    display: none;
+  }
+}
+
 .header {
   font-family: "Raleway", sans-serif;
   color: map-get($colors, blue-dark);
-  img {
-    width: 300px;
+  padding: 1.5rem 5%;
+  @include breakpoint(m) {
+    padding: 0.0875rem 5%;
   }
+
+  img {
+    width: 150px;
+    @include breakpoint(s) {
+      width: 200px;
+    }
+    @include breakpoint(m) {
+      width: 300px;
+    }
+  }
+}
+
+.Backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 16;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
 }

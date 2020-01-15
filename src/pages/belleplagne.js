@@ -36,13 +36,15 @@ const Belleplagne = () => (
   <Layout>
     <SEO title="Page two" />
     <div className="banner">
-      <h1>BELLE PLAGNE</h1>
+      <div className="banner-title">
+        <h1>Belle Plagne</h1>
+      </div>
       <ScrollAnimation animateIn="fadeIn">
         <img src={belleplagne} alt="" />
       </ScrollAnimation>
     </div>
     <div className="text">
-      <h3>HÉBERGEMENT </h3>
+      <h3>HEBERGEMENT </h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

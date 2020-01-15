@@ -10,14 +10,18 @@ import tableau from "../images/2020 TARIFS BELLE PLAGNE.png"
 const Contact = () => (
   <Layout>
     <div className="banner">
-      <h1>CONTACT</h1>
-      <div className="contact">
-        {" "}
-        <h5>ASAF ROISSY EST</h5>
-        <br />
-        <br />
-        <p> ORGANISATION: Gérard 06 80 37 67 33</p>
-        <p> Permanence ASAF: 01 41 56 61 12</p>
+      <div className="banner-title">
+        <h1>Contact</h1>
+      </div>
+      <div className="banner2">
+        <div className="contact">
+          {" "}
+          <h5>ASAF ROISSY EST</h5>
+          <br />
+          <br />
+          <p> ORGANISATION: Gérard 06 80 37 67 33</p>
+          <p> Permanence ASAF: 01 41 56 61 12</p>
+        </div>
       </div>
     </div>
   </Layout>

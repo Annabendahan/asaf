@@ -1,6 +1,8 @@
 .banner {
-  text-align: center;
+  text-align: right;
   img {
+    margin: 20px 0px;
+    margin-bottom: 150px;
     width: 100%;
     @include breakpoint(m) {
       width: 70%;
@@ -8,24 +10,61 @@
   }
 }
 
+.banner-title {
+  text-align: left;
+}
+.banner2 {
+  text-align: left;
+  margin-top: 50px;
+
+  margin-left: 5%;
+  img {
+    width: 100%;
+    @include breakpoint(m) {
+      width: 60%;
+    }
+  }
+}
+
+.box-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+
+  &__right {
+    svg {
+      margin-top: 50px;
+    }
+  }
+  p {
+    font-family: "Raleway", sans-serif;
+    color: map-get($colors, blue-dark);
+    font-size: 1.3rem;
+  }
+}
+
 .box-left {
   margin: 100px auto;
   display: flex;
   flex-direction: column-reverse;
-
   font-family: "Raleway", sans-serif;
   @include breakpoint(s) {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     align-items: center;
+  }
+  @include breakpoint(xl) {
+    width: 90%;
   }
 
   img {
     flex: 0 0 50%;
     width: 400px;
     @include breakpoint(m) {
-      width: 500px;
+      width: unset;
     }
   }
   a {
@@ -39,20 +78,25 @@
 
 .box-left2 {
   margin: 100px auto;
+  display: flex;
+  flex-direction: column;
 
   font-family: "Raleway", sans-serif;
   @include breakpoint(s) {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
+  }
+  @include breakpoint(xl) {
+    width: 90%;
   }
 
   img {
     flex: 0 0 50%;
     width: 400px;
     @include breakpoint(m) {
-      width: 500px;
+      width: unset;
     }
   }
   a {
@@ -65,13 +109,19 @@
 }
 
 .box-desc {
-  flex: 0 0 40%;
+  flex: 0 0 30%;
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .box-desc2 {
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   @include breakpoint(s) {
-    margin-left: 60px;
+    margin-left: 100px;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -97,20 +147,30 @@
 }
 
 .landing {
-  background: white;
-  z-index: 4;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  text-align: center;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 1px;
+  z-index: 4;
+  background: white;
+  top: 0px;
+  display: block;
 }
 
 .landing__content {
-  width: 400px;
+  width: 350px;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 40%;
   text-align: center;
+  color: map-get($colors, blue-dark);
+  font-family: "Raleway", sans-serif;
+
   z-index: 5;
+  @include breakpoint(m) {
+    margin-top: 20%;
+  }
 }
 
 .text {
@@ -141,14 +201,18 @@
 
 .contact {
   background-image: url(../images/backgroundblue2.jpg);
-  width: 80%;
+  width: 95%;
   margin: auto;
   min-height: 300px;
   color: white;
-  padding: 50px;
+  padding: 30px;
   p {
     font-size: 1.2;
     font-family: avenir;
+  }
+  @include breakpoint(m) {
+    width: 80%;
+    padding: 50px;
   }
 }
 
@@ -170,4 +234,146 @@
   font-family: avenir;
   font-size: 0.9rem;
   margin-left: 5%;
+}
+
+.s-pic:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.menu {
+  background: map-get($colors, blue-dark);
+  color: white;
+  z-index: 300;
+  top: -0px;
+  padding: 50px 20px;
+  font-weight: 200;
+  position: absolute;
+  height: 100vh;
+  width: 200px;
+  transition: right 0.5s ease-out;
+  font-family: Raleway;
+}
+
+.ppetit p {
+  font-size: 0.3rem;
+  padding: 0px 10px;
+  font-weight: 100;
+}
+
+.menu p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: Raleway;
+}
+
+.menu p:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.menu a:hover {
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.menuSmall {
+  width: 50px;
+  color: black;
+
+  margin: 5%;
+  transition: right 2s ease-out;
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  &:hover {
+    cursor: pointer;
+  }
+  @include breakpoint(s) {
+    top: 0px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .menuSmall {
+    visibility: visible;
+  }
+}
+
+.menu-svg {
+  transition: right 2s ease-out;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu-svg:hover .line {
+  height: 2;
+}
+
+.line {
+  position: absolute;
+  width: 30px;
+}
+
+.line2 {
+  top: 10px;
+}
+
+.line3 {
+  top: 20px;
+}
+
+.menu-svg {
+  position: relative;
+  margin-top: 15px;
+  margin-right: -20px;
+  width: 50px;
+  height: 50px;
+}
+
+svg#cross:hover {
+  width: 32px;
+  height: 32px;
+}
+svg#svg {
+  width: 50px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+svg#svg:hover > #line1 {
+  color: red;
+  transition: all 0.5s ease-out;
+}
+
+.menuSmall:hover {
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.5rem;
+  padding: 10px 10px;
+  font-weight: 100;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.Fa {
+  padding: 10px;
 }

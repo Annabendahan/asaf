@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logoASAF.jpeg"
+import Menu from "./menu.js"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,8 +18,6 @@ const Header = ({ siteTitle }) => (
         width: `100%`,
         justifyContent: `space-between`,
         alignItems: `center`,
-
-        padding: `1.45rem 3%`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -80,6 +79,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
     </div>
+    <Menu />
   </header>
 )
 

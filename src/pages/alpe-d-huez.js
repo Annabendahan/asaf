@@ -13,7 +13,9 @@ import a3 from "../images/alpeh3.png"
 const Alpedhuez = () => (
   <Layout>
     <div className="banner">
-      <h1>ALPE D'HUEZ</h1>
+      <div className="banner-title">
+        <h1>Alpe d'huez</h1>
+      </div>
       <ScrollAnimation animateIn="fadeIn">
         <img src={belleplagne} alt="" />
       </ScrollAnimation>
