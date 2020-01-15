@@ -181,13 +181,16 @@ class IndexPage extends Component {
 
             <div className="box-left">
               <div className="box-desc">
-                <div className="date">23 MARS - 03 AVRIL</div>
-                <h2> Alpe d'huez </h2>
-                <p>
-                  FORMULE HOTEL CLUB 4* <br />
-                  TARIF ASAF 550€
-                </p>
+                <Link to="/alpe-d-huez">
+                  <div className="date">23 MARS - 03 AVRIL</div>
+                  <h2> Alpe d'huez </h2>
+                  <p>
+                    FORMULE HOTEL CLUB 4* <br />
+                    TARIF ASAF 550€
+                  </p>
+                </Link>
               </div>
+
               <Link to="/alpe-d-huez">
                 <ScrollAnimation animateIn="fadeIn">
                   <img className="s-pic" src={alpeh} alt="" />
@@ -203,11 +206,13 @@ class IndexPage extends Component {
               </Link>
 
               <div className="box-desc2">
-                <div className="date">11-18 & 18-25 AVRIL </div>
-                <h2> Belle Plagne </h2>
-                <p>
-                  SEMAINE DE SKI <br /> TARIF ASAF à partir de 529€{" "}
-                </p>
+                <Link to="/belleplagne">
+                  <div className="date">11-18 & 18-25 AVRIL </div>
+                  <h2> Belle Plagne </h2>
+                  <p>
+                    SEMAINE DE SKI <br /> TARIF ASAF à partir de 529€{" "}
+                  </p>
+                </Link>
               </div>
             </div>
 

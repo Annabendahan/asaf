@@ -57,7 +57,7 @@
     align-items: center;
   }
   @include breakpoint(xl) {
-    width: 90%;
+    width: 95%;
   }
 
   img {
@@ -68,7 +68,7 @@
     }
   }
   a {
-    color: map-get($colors, blue-light);
+    color: map-get($colors, grey);
     text-decoration: none;
   }
   svg {
@@ -89,7 +89,7 @@
     align-items: center;
   }
   @include breakpoint(xl) {
-    width: 90%;
+    width: 95%;
   }
 
   img {
@@ -100,8 +100,8 @@
     }
   }
   a {
-    color: map-get($colors, blue-light);
     text-decoration: none;
+    color: map-get($colors, grey);
   }
   svg {
     margin-left: 10px;
