@@ -157,6 +157,25 @@ const Belleplagne = () => (
         <img src={c9} alt="cours" />
       </div>
     </Carousel>
+    <div className="text">
+      <h3>L'ACCÈS</h3>
+      <p>
+        Le Centaure Belle Plagne - 73210 MACOT LA PLAGNE 04 79 09 41 44
+        Coordonnées Gps : 45.506482,6.706935
+      </p>
+      <br />
+      <p>
+        - Accès par la route: Autoroute jusqu'à Albertville, puis RN 90 jusqu'à
+        Macôt, direction la Plagne. <br />- Accès par le train: Gare d'Aime. TGV
+        au départ de Paris <br />- Accès par avion: Aéroport de Lyon St exupéry
+        avec liaison bus et SNCF, de Genève-Cointrin avec liaison bus, de
+        Chambéry avec liaison bus <br /> - Accès par navette: Navette gratuite
+        entre les différentes stations de la Plagne de 8h30 à 23h00. Fréquence
+        toute les 1/4 heures <br /> - Acces de Belle plagne à La Plagne
+        Bellecote par Télécabine de 8h45 à 00h45 non stop <br /> - Accès à
+        l’établissement: Entrée par le parking souterrain "Haut"
+      </p>
+    </div>
     <div className="link">
       <Link to="tarifs-et-inscriptions">VOIR LES TARIFS</Link>{" "}
     </div>
