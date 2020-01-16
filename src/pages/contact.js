@@ -19,8 +19,8 @@ const Contact = () => (
           <h5>ASAF ROISSY EST</h5>
           <br />
           <br />
-          <p> ORGANISATION: Gérard 06 80 37 67 33</p>
-          <p> Permanence ASAF: 01 41 56 61 12</p>
+          <p> ORGANISATION: Gérard 06 80 37 67 33 - gebendahan@gmail.com</p>
+          <p> PERMANENCE ASAF: 01 41 56 61 12</p>
         </div>
       </div>
     </div>

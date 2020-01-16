@@ -5,81 +5,81 @@ import logo from "../images/logoASAF.jpeg"
 import Menu from "./menu.js"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      className="header"
+  <header>
+    <Link
+      to="/"
+      activeStyle={{ fontWeight: "bold" }}
       style={{
-        margin: `0 auto`,
-        display: `flex`,
-        width: `100%`,
-        justifyContent: `space-between`,
-        alignItems: `center`,
+        color: `white`,
+        textDecoration: `none`,
+        boxSizing: "content-box",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <img src={logo} alt="" />
-        </Link>
-      </h1>
-      <div className="navs">
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {" "}
-          ACCUEIL
-        </Link>
-        <Link
-          to="/alpe-d-huez"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {" "}
-          ALPE D'HUEZ
-        </Link>
-        <Link
-          to="/belleplagne"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {" "}
-          BELLE PLAGNE
-        </Link>
-        <Link
-          to="/tarifs-et-inscriptions"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {" "}
-          TARIFS & INSCRIPTIONS
-        </Link>
-        <Link
-          to="/contact"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {" "}
-          CONTACT
-        </Link>
-      </div>
+      <img src={logo} alt="" />
+    </Link>{" "}
+    <div className="navs">
+      <Link
+        to="/"
+        className="nav"
+        activeStyle={{ fontWeight: "bold" }}
+        style={{
+          textDecoration: `none`,
+          boxSizing: "content-box",
+        }}
+      >
+        {" "}
+        ACCUEIL
+      </Link>
+      <Link
+        to="/alpe-d-huez"
+        className="nav"
+        activeStyle={{ fontWeight: "bold" }}
+        style={{
+          textDecoration: `none`,
+          boxSizing: "content-box",
+        }}
+      >
+        {" "}
+        ALPE D'HUEZ
+      </Link>
+      <Link
+        to="/belleplagne"
+        className="nav"
+        activeStyle={{ fontWeight: "bold" }}
+        style={{
+          textDecoration: `none`,
+          boxSizing: "content-box",
+        }}
+      >
+        {" "}
+        BELLE PLAGNE
+      </Link>
+      <Link
+        to="/tarifs-et-inscriptions"
+        className="nav"
+        activeStyle={{ fontWeight: "bold" }}
+        style={{
+          textDecoration: `none`,
+          boxSizing: "content-box",
+        }}
+      >
+        {" "}
+        TARIFS & INSCRIPTIONS
+      </Link>
+      <Link
+        to="/contact"
+        className="nav"
+        activeStyle={{ fontWeight: "bold" }}
+        style={{
+          textDecoration: `none`,
+          boxSizing: "content-box",
+        }}
+      >
+        {" "}
+        CONTACT
+      </Link>
+      <Menu />
     </div>
-    <Menu />
   </header>
 )
 

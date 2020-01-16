@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import happyski from "../images/happy-ski-0.jpg"
+import homepic from "../images/image (2).png"
+
 import belleplagne from "../images/IMG_0151copie.jpg"
 import programme from "../images/AFFICHE SKI ASAF 2020 v2.png"
 import alpeh from "../images/alpeh3.png"
@@ -176,7 +178,25 @@ class IndexPage extends Component {
             <h3> DÉCOUVREZ NOS SÉJOURS</h3>
 
             <div className="box-left">
+              <Link to="/belleplagne">
+                <ScrollAnimation animateIn="fadeIn">
+                  <img className="s-pic" src={homepic} alt="" />
+                </ScrollAnimation>
+              </Link>
+
               <div className="box-desc">
+                <Link to="/belleplagne">
+                  <div className="date">11-18 & 18-25 AVRIL </div>
+                  <h2> Belle Plagne </h2>
+                  <p>
+                    SEMAINE DE SKI <br /> TARIF ASAF à partir de 529€{" "}
+                  </p>
+                </Link>
+              </div>
+            </div>
+
+            <div className="box-left2">
+              <div className="box-desc2">
                 <Link to="/alpe-d-huez">
                   <div className="date">23 MARS - 03 AVRIL</div>
                   <h2> Alpe d'huez </h2>
@@ -193,25 +213,6 @@ class IndexPage extends Component {
                 </ScrollAnimation>
               </Link>
             </div>
-
-            <div className="box-left2">
-              <Link to="/belleplagne">
-                <ScrollAnimation animateIn="fadeIn">
-                  <img className="s-pic" src={belleplagne} alt="" />
-                </ScrollAnimation>
-              </Link>
-
-              <div className="box-desc2">
-                <Link to="/belleplagne">
-                  <div className="date">11-18 & 18-25 AVRIL </div>
-                  <h2> Belle Plagne </h2>
-                  <p>
-                    SEMAINE DE SKI <br /> TARIF ASAF à partir de 529€{" "}
-                  </p>
-                </Link>
-              </div>
-            </div>
-
             <div className="programme">
               <a href={programme} download>
                 <ScrollAnimation animateIn="fadeIn">

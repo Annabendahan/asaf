@@ -1,36 +1,35 @@
 import React from "react"
+import ReactDOM from "react-dom"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from "react-responsive-carousel"
 import { Link } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import belleplagne from "../images/IMG_0151copie.jpg"
-import h1 from "../images/HEBERGEMENT/location-belle-plagne-accueil-12.jpg"
-import h2 from "../images/HEBERGEMENT/location-belle-plagne-appartement-17.jpg"
-import h3 from "../images/HEBERGEMENT/location-belle-plagne-appartement-24.jpg"
-import h4 from "../images/HEBERGEMENT/location-belle-plagne-appartement-39.jpg"
-import h5 from "../images/HEBERGEMENT/location-belle-plagne-appartement-44.jpg"
-import h6 from "../images/HEBERGEMENT/location-belle-plagne-piscine.jpg"
-import h7 from "../images/HEBERGEMENT/location-belle-plagne-salon.jpg"
-import h8 from "../images/HEBERGEMENT/location-belle-plagne-squat.jpg"
+import belleplagne from "../images/image (1).png"
+import h1 from "../images/HEBERGEMENT/h1.png"
+import h2 from "../images/HEBERGEMENT/h2.png"
+import h3 from "../images/HEBERGEMENT/h3.png"
+import h4 from "../images/HEBERGEMENT/h4.png"
+import h5 from "../images/HEBERGEMENT/h5.png"
+import h6 from "../images/HEBERGEMENT/h6.png"
 
-import m1 from "../images/Midi/GOPR2604 copie.jpg"
-import m2 from "../images/Midi/IMG_0356 copie.jpg"
-import m3 from "../images/Midi/IMG_9941 copie.jpg"
-import m4 from "../images/Midi/IMG_9954 copie.jpg"
-import m5 from "../images/Midi/IMG_9955 copie.jpg"
+import m1 from "../images/Midi/m1.png"
+import m2 from "../images/Midi/m2.png"
+import m3 from "../images/Midi/m3.png"
+import m4 from "../images/Midi/m4.png"
 
-import c1 from "../images/Cours/IMG_0117 copie.jpg"
-import c2 from "../images/Cours/IMG_0119 copie.jpg"
-import c3 from "../images/Cours/IMG_0340 copie.jpg"
-import c4 from "../images/Cours/IMG_0384 copie.jpg"
-import c5 from "../images/Cours/IMG_0393 copie.jpg"
-import c6 from "../images/Cours/IMG_0411 copie.jpg"
-import c7 from "../images/Cours/IMG_9917 copie.jpg"
-import c8 from "../images/Cours/IMG_9918 copie.jpg"
-import c9 from "../images/Cours/IMG_9982 copie.jpg"
-import c10 from "../images/Cours/IMG_9987 copie.jpg"
+import c1 from "../images/Cours/c1.png"
+import c2 from "../images/Cours/c2.png"
+import c3 from "../images/Cours/c3.png"
+import c4 from "../images/Cours/c4.png"
+import c5 from "../images/Cours/c5.png"
+import c6 from "../images/Cours/c6.png"
+import c7 from "../images/Cours/c7.png"
+import c8 from "../images/Cours/c8.png"
+import c9 from "../images/Cours/c9.png"
 
 const Belleplagne = () => (
   <Layout>
@@ -44,113 +43,120 @@ const Belleplagne = () => (
       </ScrollAnimation>
     </div>
     <div className="text">
+      <h3>LE SÉJOUR</h3>
+      <p>
+        {" "}
+        Un hébergement en résidence club 4* où chaque famille a son appartement
+        dans l’immeuble Le Centaure de Belle Plagne, skis (ou surf) aux pieds,
+        en face du jardin des neiges pour les plus petits <br /> Une
+        demi-pension avec un repas en altitude tous les midis au restaurant
+        l’Arpette, le soir reste à la convenance de chacun douillettement
+        installé dans son appartement avec sa famille, les plus petits pouvant
+        être tôt au lit pour être en forme le lendemain. Pour les plus
+        téméraires, ou les moins sages, on nous a rapporté des soirées animées
+        !! <br />
+        Le forfait de ski qui permet d’arpenter la station pendant 6 jours, de
+        dimanche à vendredi. <br /> Des cours de ski ou de surf pour chacun,
+        pour tous niveaux.
+      </p>
       <h3>HEBERGEMENT </h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+        Vous serez hébergés dans la Résidence 4* mmv LE CENTAURE où chaque
+        famille ou groupe d'amis aura son appartement (du studio eu 4 pièces)
+        spacieux et confortable, décoré avec goût, avec cuisine équipée et
+        fonctionnelle. Vous pourrez descendre vous détendredans la belle
+        piscineintérieure chauffée, avec vue imprenable sur les pistes
+        enneigées.
       </p>
     </div>
-    <div className="pictures">
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h1} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h2} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h3} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h4} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h5} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h6} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h7} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={h8} alt="" />
-      </ScrollAnimation>
-    </div>
+    <Carousel showStatus="false">
+      <div>
+        <img src={h1} alt="hébergement" />
+      </div>
+      <div>
+        <img src={h2} alt="hébergement" />
+      </div>
+      <div>
+        <img src={h3} alt="hébergement" />
+      </div>
+      <div>
+        <img src={h4} alt="hébergement" />
+      </div>
+      <div>
+        <img src={h5} alt="hébergement" />
+      </div>
+      <div>
+        <img src={h6} alt="hébergement" />
+      </div>
+    </Carousel>
     <div className="text">
       <h3>LE MIDI </h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+        Tous les midis, le restaurant l’Arpette nous accueille. Situé au milieu
+        des pistes, son accès est facile en ski, mais il peut aussi être atteint
+        à pied à partir de notre immeuble (15mn de marche dans la neige).
       </p>
     </div>
-    <div className="pictures">
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={m1} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={m2} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={m3} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={m5} alt="" />
-      </ScrollAnimation>
+
+    <div className="carousel">
+      <Carousel showStatus="false">
+        <div>
+          <img src={m1} alt="midi" />
+        </div>
+        <div>
+          <img src={m2} alt="midi" />
+        </div>
+        <div>
+          <img src={m3} alt="midi" />
+        </div>
+        <div>
+          <img src={m4} alt="midi" />
+        </div>
+      </Carousel>
     </div>
     <div className="text">
       <h3>LES COURS</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+        Les adultes sont répartis par niveau de ski avec des moniteurs ASAF. Les
+        jeunes bénéficient des cours des moniteurs de l’ESF (Ecole de ski
+        français) et peuvent ainsi passer tous les niveaux proposés (flocons,
+        étoiles). Pour ceux qui se sentent l’envie taquiner du piquet, une
+        flèche est organisée le jeudi . Suivant la demande, les cours de ski se
+        transforment l’après midi en cours de surf (un cours débutant et un
+        cours débrouillé). Les meilleurs surfeurs sont encadrés toute la journée
+        par un moniteur.
       </p>
     </div>
-    <div className="pictures">
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c1} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c2} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c3} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c4} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c5} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c6} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c7} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c8} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c9} alt="" />
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <img src={c10} alt="" />
-      </ScrollAnimation>
-    </div>{" "}
+
+    <Carousel showStatus="false">
+      <div>
+        <img src={c1} alt="cours" />
+      </div>
+      <div>
+        <img src={c2} alt="cours" />
+      </div>
+      <div>
+        <img src={c3} alt="cours" />
+      </div>
+      <div>
+        <img src={c4} alt="cours" />
+      </div>
+      <div>
+        <img src={c5} alt="cours" />
+      </div>
+      <div>
+        <img src={c6} alt="cours" />
+      </div>
+      <div>
+        <img src={c7} alt="cours" />
+      </div>
+      <div>
+        <img src={c8} alt="cours" />
+      </div>
+      <div>
+        <img src={c9} alt="cours" />
+      </div>
+    </Carousel>
     <div className="link">
       <Link to="tarifs-et-inscriptions">VOIR LES TARIFS</Link>{" "}
     </div>
