@@ -31,6 +31,8 @@ import c7 from "../images/Cours/c7.png"
 import c8 from "../images/Cours/c8.png"
 import c9 from "../images/Cours/c9.png"
 
+import acces from "../images/acces.png"
+import acces2 from "../images/acces2.png"
 const Belleplagne = () => (
   <Layout>
     <SEO title="Belleplagne" />
@@ -160,7 +162,8 @@ const Belleplagne = () => (
     <div className="text">
       <h3>L'ACCÈS</h3>
       <p>
-        Le Centaure Belle Plagne - 73210 MACOT LA PLAGNE 04 79 09 41 44
+        Le Centaure Belle Plagne <br /> 73210 MACOT LA PLAGNE <br /> 04 79 09 41
+        44 <br />
         Coordonnées Gps : 45.506482,6.706935
       </p>
       <br />
@@ -175,6 +178,8 @@ const Belleplagne = () => (
         Bellecote par Télécabine de 8h45 à 00h45 non stop <br /> - Accès à
         l’établissement: Entrée par le parking souterrain "Haut"
       </p>
+      <img src={acces} alt="cours" />
+      <img src={acces2} alt="cours" />
     </div>
     <div className="link">
       <Link to="tarifs-et-inscriptions">VOIR LES TARIFS</Link>{" "}
