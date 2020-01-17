@@ -9,7 +9,7 @@
       font-weight: bold;
     }
     @include breakpoint(xxl) {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -26,15 +26,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 7%;
+
   margin-bottom: 40px;
 
-  @include breakpoint(m) {
-    padding: 2.2875rem 5%;
+  padding: 2.0875rem 1rem;
+  @include breakpoint(s) {
+    padding: 2.0875rem 2rem;
   }
-
-  @include breakpoint(xxl) {
-    padding: 3.2875rem 2%;
+  @include breakpoint(m) {
+    padding: 2.0875rem 3rem;
+  }
+  @include breakpoint(m) {
+    padding: 2.0875rem 5rem;
   }
 
   img {
