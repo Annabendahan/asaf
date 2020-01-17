@@ -7,6 +7,9 @@
     @include breakpoint(m) {
       width: 70%;
     }
+    @include breakpoint(xxl) {
+      margin: 60px 0px;
+    }
   }
 }
 
@@ -118,17 +121,23 @@
   }
   p {
     font-size: 0.8rem;
+    @include breakpoint(xxl) {
+      font-size: 1.2rem;
+    }
   }
 }
 
 .box-desc2 {
   flex: 0 0 30%;
   @include breakpoint(s) {
-    margin-left: 200px;
+    margin-left: 150px;
   }
 
   p {
     font-size: 0.8rem;
+    @include breakpoint(xxl) {
+      font-size: 1.2rem;
+    }
   }
 }
 
