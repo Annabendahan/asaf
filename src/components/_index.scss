@@ -62,6 +62,9 @@
   @include breakpoint(xl) {
     width: 95%;
   }
+  @include breakpoint(xxl) {
+    width: 80%;
+  }
 
   img {
     flex: 0 0 50%;
@@ -93,6 +96,9 @@
   }
   @include breakpoint(xl) {
     width: 95%;
+  }
+  @include breakpoint(xxl) {
+    width: 80%;
   }
 
   img {
