@@ -655,7 +655,10 @@ footer {
   @include breakpoint(m) {
     padding: 1.0875rem 3rem;
   }
-  @include breakpoint(m) {
+  @include breakpoint(l) {
     padding: 1.0875rem 5rem;
+  }
+  @include breakpoint(xxl) {
+    padding: 1.0875rem 10rem;
   }
 }
