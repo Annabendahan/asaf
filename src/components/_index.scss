@@ -194,6 +194,10 @@
     width: 70%;
     margin: 100px 20px;
   }
+  @include breakpoint(xl) {
+    width: 60%;
+    margin: 100px 20px;
+  }
   p {
     font-family: Avenir;
     font-size: 0.9rem;

@@ -99,7 +99,7 @@ const Belleplagne = () => (
       </p>
     </div>
 
-    <div className="carousel">
+    
       <Carousel showStatus="false">
         <div>
           <img src={m4} alt="midi" />
@@ -127,7 +127,7 @@ const Belleplagne = () => (
         cours débrouillé). Les meilleurs surfeurs sont encadrés toute la journée
         par un moniteur.
       </p>
-    </div>
+    
 
     <Carousel showStatus="false">
       <div>
