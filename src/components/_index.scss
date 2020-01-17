@@ -187,6 +187,9 @@
   @include breakpoint(m) {
     margin-top: 20%;
   }
+  @include breakpoint(xxl) {
+    font-size: 2rem;
+  }
 }
 
 .text {
