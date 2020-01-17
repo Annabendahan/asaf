@@ -99,22 +99,21 @@ const Belleplagne = () => (
       </p>
     </div>
 
-    
-      <Carousel showStatus="false">
-        <div>
-          <img src={m4} alt="midi" />
-        </div>
-        <div>
-          <img src={m2} alt="midi" />
-        </div>
-        <div>
-          <img src={m3} alt="midi" />
-        </div>
-        <div>
-          <img src={m1} alt="midi" />
-        </div>
-      </Carousel>
-    </div>
+    <Carousel showStatus="false">
+      <div>
+        <img src={m4} alt="midi" />
+      </div>
+      <div>
+        <img src={m2} alt="midi" />
+      </div>
+      <div>
+        <img src={m3} alt="midi" />
+      </div>
+      <div>
+        <img src={m1} alt="midi" />
+      </div>
+    </Carousel>
+
     <div className="text">
       <h3>LES COURS</h3>
       <p>
@@ -127,7 +126,7 @@ const Belleplagne = () => (
         cours débrouillé). Les meilleurs surfeurs sont encadrés toute la journée
         par un moniteur.
       </p>
-    
+    </div>
 
     <Carousel showStatus="false">
       <div>
