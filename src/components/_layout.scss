@@ -244,6 +244,9 @@ h1 {
   @include breakpoint(xl) {
     font-size: 8rem;
   }
+  @include breakpoint(xlx) {
+    font-size: 12rem;
+  }
 }
 h2 {
   margin-left: 0;
