@@ -62,9 +62,6 @@
   @include breakpoint(xl) {
     width: 95%;
   }
-  @include breakpoint(xxl) {
-    width: 80%;
-  }
 
   img {
     flex: 0 0 50%;
@@ -96,9 +93,6 @@
   }
   @include breakpoint(xl) {
     width: 95%;
-  }
-  @include breakpoint(xxl) {
-    width: 80%;
   }
 
   img {
@@ -383,4 +377,7 @@ svg#svg:hover > #line1 {
 .carousel {
   width: 80% !important;
   margin: auto !important;
+  @include breakpoint(xl) {
+    width: 60% !important;
+  }
 }

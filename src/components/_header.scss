@@ -37,10 +37,10 @@ header {
     padding: 2.0875rem 3rem;
   }
   @include breakpoint(l) {
-    padding: 2.0875rem 5rem;
+    padding: 2.5875rem 5rem;
   }
   @include breakpoint(xxl) {
-    padding: 2.0875rem 13rem;
+    padding: 3.0875rem 13rem;
   }
 
   img {
