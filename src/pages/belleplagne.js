@@ -61,6 +61,8 @@ const Belleplagne = () => (
         dimanche à vendredi. <br /> Des cours de ski ou de surf pour chacun,
         pour tous niveaux.
       </p>
+      <br />
+      <br />
       <h3>HEBERGEMENT </h3>
       <p>
         Vous serez hébergés dans la Résidence 4* mmv LE CENTAURE où chaque
@@ -73,13 +75,10 @@ const Belleplagne = () => (
     </div>
     <Carousel showStatus="false">
       <div>
-        <img src={h1} alt="hébergement" />
+        <img src={h3} alt="hébergement" />
       </div>
       <div>
         <img src={h2} alt="hébergement" />
-      </div>
-      <div>
-        <img src={h3} alt="hébergement" />
       </div>
       <div>
         <img src={h4} alt="hébergement" />
@@ -103,7 +102,7 @@ const Belleplagne = () => (
     <div className="carousel">
       <Carousel showStatus="false">
         <div>
-          <img src={m1} alt="midi" />
+          <img src={m4} alt="midi" />
         </div>
         <div>
           <img src={m2} alt="midi" />
@@ -112,7 +111,7 @@ const Belleplagne = () => (
           <img src={m3} alt="midi" />
         </div>
         <div>
-          <img src={m4} alt="midi" />
+          <img src={m1} alt="midi" />
         </div>
       </Carousel>
     </div>

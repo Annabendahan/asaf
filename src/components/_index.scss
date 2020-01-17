@@ -200,6 +200,9 @@
   p {
     font-family: Avenir;
     font-size: 0.9rem;
+    @include breakpoint(xxl) {
+      font-size: 1.2rem;
+    }
   }
 }
 
