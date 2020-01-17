@@ -129,6 +129,9 @@
 
 .box-desc2 {
   flex: 0 0 30%;
+  @include breakpoint(s) {
+    margin-left: 200px;
+  }
 
   p {
     font-size: 0.8rem;
