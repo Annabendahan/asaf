@@ -62,9 +62,6 @@
     width: 100%;
     align-items: center;
   }
-  @include breakpoint(xl) {
-    width: 95%;
-  }
 
   img {
     flex: 0 0 50%;
@@ -94,9 +91,6 @@
     width: 100%;
     align-items: center;
   }
-  @include breakpoint(xl) {
-    width: 95%;
-  }
 
   img {
     flex: 0 0 50%;
@@ -121,7 +115,7 @@
   }
   p {
     font-size: 0.8rem;
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       font-size: 1.2rem;
     }
   }
@@ -135,7 +129,7 @@
 
   p {
     font-size: 0.8rem;
-    @include breakpoint(xxl) {
+    @include breakpoint(xl) {
       font-size: 1.2rem;
     }
   }
@@ -395,4 +389,8 @@ svg#svg:hover > #line1 {
   @include breakpoint(xl) {
     width: 60% !important;
   }
+}
+
+.acces {
+  margin: 20px;
 }

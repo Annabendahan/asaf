@@ -177,8 +177,8 @@ const Belleplagne = () => (
         Bellecote par Télécabine de 8h45 à 00h45 non stop <br /> - Accès à
         l’établissement: Entrée par le parking souterrain "Haut"
       </p>
-      <img src={acces} alt="cours" />
-      <img src={acces2} alt="cours" />
+      <img src={acces} className="acces" alt="cours" />
+      <img src={acces2} className="acces" alt="cours" />
     </div>
     <div className="link">
       <Link to="tarifs-et-inscriptions">VOIR LES TARIFS</Link>{" "}
