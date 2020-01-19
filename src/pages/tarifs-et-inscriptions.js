@@ -32,12 +32,12 @@ const Tarifs = () => (
     <img src={tableau} alt="" />
     <h3> FORMULAIRES </h3>
     <div className="tarifs">
-      <a href={f2} download>
+      <a href={f1} download>
         {" "}
         FORMULAIRE ASAF{" "}
       </a>
       <br />
-      <a href={f1} download>
+      <a href={f2} download>
         FORMULAIRE INVITÉS
       </a>
     </div>
