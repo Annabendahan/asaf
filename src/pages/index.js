@@ -14,6 +14,8 @@ import programme from "../images/AFFICHE SKI ASAF 2020 v2.png"
 import alpeh from "../images/alpeh3.png"
 import logo from "../images/logoASAF.jpeg"
 
+import video from "../images/VID-20200201-WA0002.mp4"
+
 class IndexPage extends Component {
   state = {
     mounted: false,
@@ -165,14 +167,21 @@ class IndexPage extends Component {
               <h1>LESS TALK. MORE SKI.</h1>
             </ScrollAnimation> */}
 
-              <img
+              <video
                 style={{
                   opacity: this.state.mounted2 ? 1 : 0,
                   transition: "1s opacity ease-out",
+                  margin: "40px 0px 80px 0px",
                 }}
-                src={belleplagne}
-                alt=""
-              />
+                className="asafvid"
+                poster="../images/poster.png"
+                playsInline
+                autoPlay
+                loop
+                muted
+              >
+                <source src={video} type="video/mp4" />
+              </video>
             </div>
             <br />
             <h3> DÉCOUVREZ NOS SÉJOURS</h3>
